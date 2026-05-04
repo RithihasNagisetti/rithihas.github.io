@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nagisetti Rithihas</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Academicons (Google Scholar, etc.) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+  <!-- ── Scroll progress bar ── -->
+  <div id="progress-bar"></div>
+
+  <!-- ── Navbar ── -->
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-white border-bottom fixed-top">
+    <div class="container">
+
+      <!-- Social icons (left) -->
+      <div class="navbar-brand d-flex align-items-center gap-2">
+        <a href="mailto:rithihas@wustl.edu" title="Email"><i class="bi bi-envelope-fill icon-nav"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github icon-nav"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin icon-nav"></i></a>
+        <!-- TODO: replace href with real Google Scholar link -->
+        <a href="#" title="Google Scholar"><i class="ai ai-google-scholar icon-nav"></i></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.pdf" target="_blank">CV</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="container" id="main-content">
+
+    <!-- ── About ── -->
+    <section id="about" class="pt-section">
+
+      <!-- Photo (right) + text (left) -->
+      <div class="row align-items-start">
+        <div class="col-md-8 col-lg-9">
+          <h1 class="site-name">Nagisetti Rithihas</h1>
+          <p class="site-title">PhD Student &mdash; Imaging Science</p>
+          <p class="site-affil">
+            <a href="https://engineering.wustl.edu" target="_blank">McKelvey School of Engineering</a>,
+            Washington University in St. Louis<br />
+            CMIT Lab &middot; Advisor: <a href="#" target="_blank">Dr. Abhinav K. Jha</a>
+          </p>
+
+          <div class="mt-3 about-bio">
+            <p>
+              I am a first-year PhD student in Imaging Science at Washington University in St. Louis,
+              working in the <strong>Computational Medical Imaging and Technology (CMIT) Lab</strong>.
+              My research interests lie in <em>generative AI for medical imaging</em>,
+              <em>high-dimensional statistical inference</em>, and the <em>manifold hypothesis</em>
+              as a framework for understanding learned representations in deep networks.
+              I am particularly interested in <em>hallucination analysis</em> and
+              <em>explainability/interpretability of black-box AI</em> models in safety-critical
+              clinical settings, with current applications in <strong>SPECT domain imaging</strong>.
+            </p>
+            <p>
+              I completed a dual degree in <strong>Electronics &amp; Communication Engineering (B.Tech)</strong>
+              and <strong>Vision &amp; Intelligent Systems (M.Tech)</strong> at
+              <a href="https://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a>.
+              My prior work spans <em>3D human pose analysis</em>, <em>temporal NeRF-based
+              3D reconstruction &amp; generation</em>, combat sports video analytics,
+              and cardiac signal processing.
+            </p>
+          </div>
+
+          <div class="mt-3 contact-line">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="mailto:rithihas@wustl.edu">rithihas@wustl.edu</a>
+            &ensp;|&ensp;
+            <a href="cv.pdf" target="_blank"><i class="bi bi-file-earmark-text me-1"></i>Curriculum Vitae</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 text-center mt-4 mt-md-0">
+          <!-- Replace src with your actual photo path, e.g. "photo.jpg" -->
+          <div class="profile-photo-wrap">
+            <img src="web pic.jpeg" alt="Nagisetti Rithihas" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── News ── -->
+    <section id="news">
+      <h2 class="section-heading">News</h2>
+
+      <div class="news-scroll-wrap">
+        <table class="table table-sm news-table">
+          <tbody>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">2026</span>
+                <span class="badge badge-award ms-1">Award</span>
+              </td>
+              <td>Awarded the <strong>SNMMI Student Research Grant 2026</strong> for the project <em>"Patient-Specific MPI SPECT Reconstruction Optimization Using Deep Learning."</em></td>
+            </tr>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">Aug 2025</span>
+                <span class="badge badge-position ms-1">Position</span>
+              </td>
+              <td>Started PhD in Imaging Science at Washington University in St. Louis.</td>
+            </tr>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">2024</span>
+                <span class="badge badge-award ms-1">Award</span>
+              </td>
+              <td>Awarded the <strong>Dean's Select Fellowship</strong> at McKelvey School of Engineering, WashU.</td>
+            </tr>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">2024</span>
+                <span class="badge badge-paper ms-1">Paper</span>
+              </td>
+              <td>
+                Paper on efficient boxing punch classification published at
+                <strong>CVCI 2024</strong>.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">2024</span>
+                <span class="badge badge-paper ms-1">Paper</span>
+              </td>
+              <td>
+                Paper on hierarchical punch recognition in uncontrolled settings accepted at
+                <strong>CVIP 2024</strong>.
+              </td>
+            </tr>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">2024</span>
+                <span class="badge badge-award ms-1">Award</span>
+              </td>
+              <td>GATE All India Rank <strong>421</strong> in Data Science &amp; AI.</td>
+            </tr>
+
+            <tr>
+              <td class="news-date-col">
+                <span class="text-muted small">2024</span>
+                <span class="badge badge-position ms-1">Position</span>
+              </td>
+              <td>Selected for MISRIP summer research internship at Washington University in St. Louis.</td>
+            </tr>
+
+            <!-- TODO: add PhD-specific news as it happens -->
+
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Publications ── -->
+    <section id="publications">
+      <h2 class="section-heading">Selected Publications</h2>
+
+      <!-- Pub 1 -->
+      <div class="pub-card row g-0 mb-4">
+        <div class="col-md-3 pub-thumb-col">
+          <!-- Replace with actual paper thumbnail image: <img src="pub1_thumb.jpg" class="pub-thumb" alt=""> -->
+          <div class="pub-thumb-placeholder">
+            <span class="venue-badge" style="background:#1a73e8;">CVCI</span>
+          </div>
+        </div>
+        <div class="col-md-9 pub-body">
+          <p class="pub-title">
+            Efficient Boxing Punch Classification: Fine-Grained Skeleton-based Recognition Made Light
+          </p>
+          <p class="pub-authors">
+            Vipul Baghel, <em>Nagisetti Rithihas</em>, Babji Srinivasan, Ravi Sadananda Hegde
+          </p>
+          <p class="pub-venue">
+            <em>Computer Vision and Computational Intelligence (CVCI), 2024</em>
+          </p>
+          <div class="pub-links mt-2">
+            <button class="btn-pub" onclick="toggleAbstract('abs1')">Abstract</button>
+            <!-- <a href="#" class="btn-pub" target="_blank">PDF</a> -->
+            <!-- <a href="#" class="btn-pub" target="_blank">Code</a> -->
+          </div>
+          <div id="abs1" class="pub-abstract" style="display:none;">
+            <p>
+              We present a lightweight skeleton-based approach for fine-grained boxing punch
+              classification. Leveraging pose-to-pose graph representations and angular encoding,
+              our method achieves high accuracy while remaining computationally efficient for
+              real-time sports analytics applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 2 -->
+      <div class="pub-card row g-0 mb-4">
+        <div class="col-md-3 pub-thumb-col">
+          <div class="pub-thumb-placeholder">
+            <span class="venue-badge" style="background:#0f9d58;">CVIP</span>
+          </div>
+        </div>
+        <div class="col-md-9 pub-body">
+          <p class="pub-title">
+            A Novel Hierarchical Pipeline for Fine-Grained Punch Recognition in Uncontrolled Settings
+          </p>
+          <p class="pub-authors">
+            Vipul Baghel, Sagar Deep Deb, <em>Nagisetti Rithihas</em>, Babji Srinivasan, Ravi Sadananda Hegde
+          </p>
+          <p class="pub-venue">
+            <em>International Conference on Computer Vision &amp; Image Processing (CVIP), 2024</em>
+            &mdash; <span class="text-success fw-500">Accepted</span>
+          </p>
+          <div class="pub-links mt-2">
+            <button class="btn-pub" onclick="toggleAbstract('abs2')">Abstract</button>
+          </div>
+          <div id="abs2" class="pub-abstract" style="display:none;">
+            <p>
+              We propose a hierarchical pipeline for recognizing boxing punches in wild-setting
+              videos where lighting, camera angle, and occlusion vary significantly. Using 3D pose
+              estimation and per-frame probability regression, the system detects and classifies
+              punch instances with 96.09% accuracy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TODO: Add PhD publications here -->
+
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Research ── -->
+    <section id="research">
+      <h2 class="section-heading">Research Experience</h2>
+
+      <!-- PhD placeholder -->
+      <div class="res-item mb-4">
+        <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+          <h5 class="res-title">PhD Research <span class="badge badge-current ms-1">Current</span></h5>
+          <span class="text-muted small">2025 &ndash; Present</span>
+        </div>
+        <p class="res-meta">CMIT Lab &middot; Washington University in St. Louis &middot; Advisor: Dr. Abhinav K. Jha</p>
+        <p class="text-muted fst-italic small">&#9998; PhD research details coming soon.</p>
+      </div>
+
+      <div class="res-item mb-4">
+        <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+          <h5 class="res-title">Quantification of SPECT Image Realism</h5>
+          <span class="text-muted small">May &ndash; July 2024</span>
+        </div>
+        <p class="res-meta">Summer Research Internship &middot; Washington University in St. Louis &middot; Advisor: Dr. Abhinav K. Jha</p>
+        <ul class="res-bullets">
+          <li>Generated synthetic cardiac perfusion SPECT images using XCAT phantoms with synthetic cold defects.</li>
+          <li>Implemented a deep learning-based Ideal Observer to quantify similarity between two cardiac SPECT image populations.</li>
+          <li>Demonstrated that irrelevant data correlations (e.g., patient size) can mislead deep learning-based observers.</li>
+        </ul>
+      </div>
+
+      <div class="res-item mb-4">
+        <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+          <h5 class="res-title">Controlled Temporal 3D Human Pose Generation</h5>
+          <span class="text-muted small">Aug 2024 &ndash; Apr 2025</span>
+        </div>
+        <p class="res-meta">Master's Thesis &middot; IIT Kharagpur &middot; Advisor: Prof. Saumik Bhattacharya</p>
+        <ul class="res-bullets">
+          <li>Developed a temporal 3D data generation pipeline under the <em>Guess the Unseen</em> framework for consistent 3D motion sequences from partial observations.</li>
+          <li>Integrated SPGAN with 3D Gaussian Splatting to improve realism and controllability of generated 3D representations.</li>
+          <li>Designed a custom loss for joint optimization of visible-region reconstruction and occluded-part generation.</li>
+        </ul>
+      </div>
+
+      <div class="res-item mb-4">
+        <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+          <h5 class="res-title">Supervised Bout Classification</h5>
+          <span class="text-muted small">May &ndash; June 2023</span>
+        </div>
+        <p class="res-meta">Summer Research Internship &middot; IIT Gandhinagar &middot; Advisor: Prof. Ravi Hegde</p>
+        <ul class="res-bullets">
+          <li>Created a 1,500-labeled human pose sequence dataset from 6 hours of video.</li>
+          <li>Developed pose-to-pose graph and 3D pose algorithms for boxing punch classification; achieved 88% accuracy.</li>
+          <li>Achieved 99% test accuracy with fifth-order angular encoding features using KNN.</li>
+        </ul>
+      </div>
+
+      <div class="res-item mb-4">
+        <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+          <h5 class="res-title">PCG-based Heart Murmur Detection in Children</h5>
+          <span class="text-muted small">Aug 2023 &ndash; Apr 2024</span>
+        </div>
+        <p class="res-meta">B.Tech Project &middot; IIT Kharagpur &middot; Advisor: Prof. Goutham Saha</p>
+        <ul class="res-bullets">
+          <li>Developed two novel cardiac cycle segmentation algorithms (Peak-based Sliding Window: 72%; State Space Peak Envelope: 85% accuracy).</li>
+          <li>Designed a statistical method to detect and correct external noise in corrupted cardiac cycle data.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Education ── -->
+    <section id="education">
+      <h2 class="section-heading">Education</h2>
+
+      <div class="edu-item mb-3">
+        <div class="d-flex justify-content-between flex-wrap gap-1">
+          <strong>PhD in Imaging Science</strong>
+          <span class="text-muted small">2025 &ndash; Present</span>
+        </div>
+        <div>Washington University in St. Louis &middot; McKelvey School of Engineering</div>
+        <div class="text-muted small">CMIT Lab &middot; Advisor: Dr. Abhinav K. Jha &middot; Dean's Select Fellowship</div>
+      </div>
+
+      <div class="edu-item mb-3">
+        <div class="d-flex justify-content-between flex-wrap gap-1">
+          <strong>B.Tech + M.Tech (Dual Degree)</strong>
+          <span class="text-muted small">2020 &ndash; 2025</span>
+        </div>
+        <div>Indian Institute of Technology, Kharagpur</div>
+        <div class="text-muted small">B.Tech in ECE &middot; M.Tech in Vision and Intelligent Systems</div>
+      </div>
+
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- ── Achievements ── -->
+    <section id="achievements" class="pb-section">
+      <h2 class="section-heading">Selected Honors &amp; Awards</h2>
+
+      <table class="table table-sm awards-table">
+        <tbody>
+          <tr>
+            <td class="award-year">2026</td>
+            <td><strong>SNMMI Student Research Grant</strong> &mdash; Society of Nuclear Medicine and Molecular Imaging</td>
+          </tr>
+          <tr>
+            <td class="award-year">2024</td>
+            <td><strong>Dean's Select Fellowship</strong> &mdash; McKelvey School of Engineering, WashU</td>
+          </tr>
+          <tr>
+            <td class="award-year">2024</td>
+            <td><strong>GATE All India Rank 421</strong> &mdash; Data Science &amp; AI</td>
+          </tr>
+          <tr>
+            <td class="award-year">2024</td>
+            <td><strong>MISRIP</strong> &mdash; Summer Research Internship, Washington University in St. Louis</td>
+          </tr>
+          <tr>
+            <td class="award-year">2024</td>
+            <td><strong>UARE</strong> &mdash; University of Alberta Summer Research Experience Program</td>
+          </tr>
+          <tr>
+            <td class="award-year">2023</td>
+            <td><strong>SRIP</strong> &mdash; IIT Gandhinagar (selected out of 36,000 applicants)</td>
+          </tr>
+          <tr>
+            <td class="award-year">2020</td>
+            <td><strong>JEE Advanced AIR 1969</strong> &mdash; Among 1.8 million candidates</td>
+          </tr>
+          <tr>
+            <td class="award-year">2020</td>
+            <td><strong>TS EAMCET State Rank 310</strong> &mdash; Among 100,000 candidates</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="border-top bg-white">
+    <div class="container py-3 d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <span class="text-muted small">&copy; 2025 Nagisetti Rithihas &middot; Washington University in St. Louis</span>
+      <div class="d-flex gap-3">
+        <a href="mailto:rithihas@wustl.edu" class="text-muted"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="text-muted"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="text-muted"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
